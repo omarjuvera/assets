@@ -1,5 +1,5 @@
 // DynamicBackground.js
-//getRepoUrl('repoUrl'); // Check is repoUrl is defined
+getRepoUrl('repoUrl'); // Check is repoUrl is defined
 //typeof window.repoUrl === 'undefined' && (window.repoUrl = 'https://omarjuvera.github.io/Portfolios/');
 const portfolioUrl = getPortfolioUrl(repoUrl); // Get the portfolio URL based on the current location
 
@@ -19,7 +19,7 @@ function getRepoUrl(repoUrl) {
 		}
 	// Handle the error (if any) and set repoUrl to the default value
 	} catch (error) {
-		const repoUrl = defaultValue;
+		const window[repoUrl] = defaultValue;
 		console.log('Using default repo:', repoUrl);
 	}
 }
