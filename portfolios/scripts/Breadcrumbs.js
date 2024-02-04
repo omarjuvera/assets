@@ -1,6 +1,6 @@
 // Breadcrumbs.js
 	// rev. 2024-02-03
-const baseUrl = `https://${username}.github.io/` || 'https://omarjuvera.github.io/Portfolios/';
+const baseUrl = `https://${username}.github.io/` || 'https://omarjuvera.github.io/';
 const repoUrl = `${baseUrl}${repo}`;
 
 const breadcrumbDiv = document.getElementById('breadcrumbs');
