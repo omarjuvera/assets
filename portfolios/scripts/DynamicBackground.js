@@ -9,7 +9,8 @@ function getRepoUrl(repoUrl) {
 	let defaultValue = 'https://omarjuvera.github.io/Portfolios/';
 	try {
 		// If repoUrl is not declared or has a falsy value, it defaults to 'https://omarjuvera.github.io/Portfolios/'
-		if (typeof window[repoUrl] === 'undefined') {
+		if (!window[repoUrl]) {
+		//if (typeof window[repoUrl] === 'undefined') {
 			console.log('repoUrl is undefined');
 			window[repoUrl] = defaultValue;
 			console.log('repoUrl value:', repoUrl);
