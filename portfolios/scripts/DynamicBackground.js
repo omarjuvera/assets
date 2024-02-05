@@ -19,7 +19,12 @@ function getRepoUrl(repoUrl) {
 		}
 	// Handle the error (if any) and set repoUrl to the default value
 	} catch (error) {
-		const window[repoUrl] = defaultValue;
+		// const window[repoUrl] = defaultValue;
+		Object.defineProperty(window, repoUrl, {
+			value: defaultValue,
+			writable: false,
+			configurable: false,
+		});
 		console.log('Using default repo:', repoUrl);
 	}
 }
