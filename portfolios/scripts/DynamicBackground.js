@@ -76,3 +76,6 @@ function setNewBackground() {
 }
 
 setNewBackground();
+
+const consoleDiv = document.getElementById('console');
+consoleDiv.innerHTML = portfolioUrl;
