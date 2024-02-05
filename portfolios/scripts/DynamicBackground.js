@@ -1,5 +1,6 @@
 // DynamicBackground.js
 //getRepoUrl(repoUrl); // Check is repoUrl is defined
+/*
 if (!window[repoUrl]) {
 	let defaultValue = 'https://omarjuvera.github.io/Portfolios/';
 	Object.defineProperty(window, repoUrl, {
@@ -10,7 +11,7 @@ if (!window[repoUrl]) {
 	console.log('repoUrl is undefined');
 	console.log('repoUrl now has been set with a value:', repoUrl);
 }
-
+*/
 
 //typeof window.repoUrl === 'undefined' && (window.repoUrl = 'https://omarjuvera.github.io/Portfolios/');
 //const repoUrl = window.repoUrl || 'https://omarjuvera.github.io/Portfolios/';
