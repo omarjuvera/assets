@@ -56,6 +56,7 @@ function getPortfolioUrl(repoUrl) {
 		console.log('Using default portfolio:', error.message);
 		return ''; // Set to default (empty string) in case of an issue
 	}
+	console.log("portfolioUrl value set to:", portfolioUrl);
 }
 
 // Function to set the background based on the determined portfolioUrl
